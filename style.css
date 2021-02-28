@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin: 4vh 6vh;
+    padding: 0 20vh;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: gray;
+    background-color: lightgoldenrodyellow;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border: 2px dashed darkolivegreen; 
+}
+
+.viewscore-section,
+.header-timer,
+.header-title {
+    flex: 1 1 33.33%;
+}
+
+.header-timer,
+.viewscore-section {
+    padding: 3vh 10vh;
+}
+
+.header-title {
+    padding: 0 7vh;
+    text-transform: uppercase;
+    text-align: center;
+    color: orange;
+}
+
+.header-timer p {
+    padding: 1vh 0;
+    text-align: center;
+    color: orange;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 8vh;
+}
+
+.quiz-question {
+    border: 2px dashed darkolivegreen;
+    margin: 0 5vh 5vh;
+}
+
+.quiz-question h2 {
+    padding: 2vh 3vh;
+    color: orange;
+}
+
+.quiz-choice {
+    width: 50vh;
+    padding: 0 5vh;
+}
+
+.start-button {
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    font-size: 10px;
+}
+
+.answer-validity:before {
+    content: "";
+    padding: 0 0.01vh;
+}
+
+.answer-validity {
+    align-content: center;
+}   
+
+button {
+    margin: 2vh;
+    color: darkslategrey;
+    background-color: lightsteelblue;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+input {
+    margin: 2vh;
+    border: none;
+    color: grey;
+    background-color: #21212100
+}
+
+footer:before {
+    content: "";
+    padding: 10vh;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+}
+
+footer section h3 {
+    margin-right: 10vh;
+}
+
+@media screen and (min-height:650px) {
+    .answer-validity {
+        bottom: 10vh;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    header h1 {
+    font-size: 27px;
+    }
+
+    .quiz-question h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        margin-top: 10vh;
+    }
+}
